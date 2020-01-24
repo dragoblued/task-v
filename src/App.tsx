@@ -1,25 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
+import {BrowserRouter, Route, Switch } from "react-router-dom";
+import NavBarComponent from './components/NavBarComponent';
 import './App.css';
+import TaskOneComponent from './components/TaskOneComponent';
+import MainComponent from './components/MainComponent';
 
 const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+	  	<div className="wrapper">
+		    <main className="content">
+		     	<NavBarComponent />
+				 <BrowserRouter>
+					<Switch>
+						<Route exact path="/" component={MainComponent} />
+						<Route path="/taskone" component={TaskOneComponent} />
+					</Switch>
+				 </BrowserRouter>
+		    </main>
+		    <footer className="footer">
+		    	<p className="footer_text">@copyright Tabaeva Natalia</p>
+		    </footer>
+	    </div>
   );
 }
 

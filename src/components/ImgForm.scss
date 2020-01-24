@@ -1,0 +1,24 @@
+
+.form_task2 {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 2rem;
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button_submit {
+    border: 2px solid black !important;
+    background: white;
+    color: black;
+    border: none;
+    outline: none;
+    margin-left: 2rem;
+    cursor: pointer;
+    transition: 0.2s; 
+    &:hover {
+        background: black;
+        color: white;
+    }
+}

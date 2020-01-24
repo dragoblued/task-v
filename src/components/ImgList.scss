@@ -1,0 +1,32 @@
+.item {
+    height: 85%;
+    background: black;
+    width: 100%;
+    color: white;
+    padding-top: 1rem;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);;
+
+}
+.btn {  
+    display: block;
+    margin: 0 auto;
+    background: white;
+    &:hover {
+        background: white;
+    }
+}
+.list {
+    margin: 0 auto;
+    height: 100%;
+    width: 90vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    &_item {
+        margin-bottom: 3rem;
+        width: 25vw;
+        height: 25vw;
+    }
+}
