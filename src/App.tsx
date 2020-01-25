@@ -1,9 +1,10 @@
 import React from 'react';
-import {BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import NavBarComponent from './components/NavBarComponent';
-import './App.css';
 import TaskOneComponent from './components/TaskOneComponent';
+import TaskTwoComponent from './components/TaskTwoComponent';
 import MainComponent from './components/MainComponent';
+import './App.css';
 
 const App: React.FC = () => {
   return (
@@ -14,6 +15,7 @@ const App: React.FC = () => {
 					<Switch>
 						<Route exact path="/" component={MainComponent} />
 						<Route path="/taskone" component={TaskOneComponent} />
+						<Route path="/tasktwo" component={TaskTwoComponent} />
 					</Switch>
 				 </BrowserRouter>
 		    </main>

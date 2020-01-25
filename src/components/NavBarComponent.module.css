@@ -7,6 +7,7 @@
 	padding: 0 20px;
 	justify-content: space-between;
 	letter-spacing: 2px;
+	font-family: 'Bebas Neue', cursive;
 }
 .container_link {
 	display: flex;
@@ -50,11 +51,11 @@
 	.nav_link {
 		display: none;
 	}
-	.nav_link2 {
+	.nav_link__mobile {
 		background: black;
     	transition: 1s; 
 	}
-	.nav_link2:hover {
+	.nav_link__mobile:hover {
 		transform: scale(1.2);
 	}
 	.nav_mobile {

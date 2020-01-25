@@ -1,5 +1,5 @@
 import React from 'react';
-import {IImg} from './interfaces';
+import { IImg } from './interfaces';
 import './ImgList.scss';
 
 type ImgListProps = {
@@ -7,7 +7,7 @@ type ImgListProps = {
 	onRemove(id: number): void
 }
 
-const ImgList: React.FC<ImgListProps> = ({imgs, onRemove}) => {
+const ImgList: React.FC<ImgListProps> = ({ imgs, onRemove }) => {
 	return(
 		<ul className="list">
 			{imgs.map(item => {

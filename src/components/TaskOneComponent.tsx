@@ -1,5 +1,5 @@
 import React,{ useState, useEffect} from 'react';
-import ImgForm from './ImgForm';
+import FormSubmit from './FormSubmit';
 import {IImg} from './interfaces';
 import ImgList from './ImgList';
 
@@ -25,7 +25,7 @@ const TaskOneComponent: React.FC  = () => {
   	}
 	return(
 		<div>
-			<ImgForm onAdd={addHandler}/>
+			<FormSubmit onAdd={addHandler} textPlaceholder={'Введите адрес картинки'}/>
 			<ImgList imgs={images} onRemove={removeHandler}/>
 		</div>
 	);
