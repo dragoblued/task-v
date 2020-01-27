@@ -13,7 +13,11 @@ const TaskTwoComponent: React.FC = () => {
                 .then(response => {
                     setLoad(prev => prev = false)
                     setAnswer(prev => prev = response.data)
-            })
+                })
+                .catch(error => {
+                    setLoad(prev => prev = false);
+                    window.location.href = '/error';
+                })
         }, 2000);
         
 	}

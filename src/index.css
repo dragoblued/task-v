@@ -18,9 +18,33 @@ a {
 	text-decoration: none;
 	outline: none;
 }
+
 .text_answer {
   width: 60%;
   text-align: center;
   font-size: 24px;
   margin: 0 auto;
+}
+
+.block_error {
+  text-align: center;
+  position:absolute;
+  top:35%;
+  left: 47%;
+}
+.block_error h1 {
+  font-size: 100px;
+}
+
+.block_error p {
+  font-size: 36px;
+}
+
+@media (max-width: 768px) { 
+  .block_error {
+    text-align: center;
+    position:absolute;
+    top:30%;
+    left: 35%;
+  }
 }
